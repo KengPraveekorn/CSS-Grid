@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.products-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));  /* ให้มี 6 col ความกว้าง 1fr/col */
+    grid-gap: 0.5rem;
+}
+
+.products-item {
+    /* box-shadow: แกน x, แกน y, ความฟุ้ง, ความเข้มของสีเงา  */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    transition: 0.3s;
+    outline: 1px solid white;
+}
+
+.products-item:hover {
+    outline: 1px solid orange;
+}
+
+.products-detail {
+    padding: 1rem;
+}
+
+.products-price {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-right span {
+    font-size: 12px;
+}
+
+.products-img img {
+    width: 100%;
+}
